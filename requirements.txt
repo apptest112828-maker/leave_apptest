@@ -1,0 +1,8 @@
+Flask==3.0.0
+gunicorn
+pandas
+requests
+psycopg2-binary
+openpyxl
+
+
