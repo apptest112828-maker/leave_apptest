@@ -221,7 +221,7 @@ def apply_leave():
         send_email(
             "New Leave Request",
             f"{emp} applied for {days} days ({ltype}).",
-            to="sample112828@gmail.com"
+            to="apptest112828@gmail.com"
         )
 
         flash("Leave request submitted", "success")
