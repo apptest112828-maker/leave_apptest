@@ -94,7 +94,7 @@ def send_email(subject, body, to):
     payload = {
         "sender": {
             "name": "Leave System",
-            "email": config.SENDER_EMAIL  # placeholder from config.py
+            "email": apptest112828@gmail.com
         },
         "to": [{"email": to}],
         "subject": subject,
@@ -221,7 +221,7 @@ def apply_leave():
         send_email(
             "New Leave Request",
             f"{emp} applied for {days} days ({ltype}).",
-            to=config.ADMIN_NOTIFICATION_EMAIL
+            to=sample112828@gmail.com
         )
 
         flash("Leave request submitted", "success")
@@ -334,7 +334,7 @@ def approve(lid):
         send_email(
             "Leave Approved",
             f"{lr['employee_name']} leave ({lr['start_date']} → {lr['end_date']}) approved.",
-            to=config.EMPLOYEE_NOTIFICATION_EMAIL
+            to=jesstanblues@gmail.com
         )
 
     conn.close()
@@ -357,7 +357,7 @@ def reject(lid):
         send_email(
             "Leave Rejected",
             f"{lr['employee_name']} leave ({lr['start_date']} → {lr['end_date']}) rejected.",
-            to=config.EMPLOYEE_NOTIFICATION_EMAIL
+            to=jesstanblues@gmail.com
         )
 
     conn.close()
